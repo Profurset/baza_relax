@@ -1,0 +1,99 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f3ee;
+    color: #2c302b;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    color: #4b5548;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4b5548;
+}
+
+button {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+.bg-primary {
+    background-color: #4b5548 !important;
+}
+
+.text-primary {
+    color: #4b5548 !important;
+}
+
+.bg-accent {
+    background-color: #7a6e59 !important;
+}
+
+.text-accent {
+    color: #7a6e59 !important;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hover\:bg-primary:hover {
+    background-color: #4b5548;
+}
+
+.hover\:text-secondary:hover {
+    color: #ffffff;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    /* Уменьшаем размер шрифта для больших заголовков */
+    h2 {
+        font-size: 2rem; /* Более компактный размер для мобильных */
+    }
+
+    /* Уменьшаем размер текста */
+    p {
+        font-size: 1rem; /* Меньший размер для мобильных */
+        line-height: 1.6; /* Улучшаем читаемость */
+    }
+}
+p {
+    word-break: break-word; /* Разрывает длинные слова */
+}
